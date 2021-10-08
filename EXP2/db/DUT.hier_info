@@ -1,0 +1,34 @@
+|DUT
+input_vector[0] => scrabble:scrabble_instance.I[0]
+input_vector[1] => scrabble:scrabble_instance.I[1]
+input_vector[2] => scrabble:scrabble_instance.I[2]
+input_vector[3] => scrabble:scrabble_instance.I[3]
+output_vector[0] << scrabble:scrabble_instance.O
+
+
+|DUT|scrabble:scrabble_instance
+I[0] => XOR_2:g2.B
+I[1] => XOR_2:g2.A
+I[2] => XNOR_2:g1.B
+I[3] => XNOR_2:g1.A
+O <= AND_2:g3.Y
+
+
+|DUT|scrabble:scrabble_instance|XNOR_2:g1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|scrabble:scrabble_instance|XOR_2:g2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|scrabble:scrabble_instance|AND_2:g3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

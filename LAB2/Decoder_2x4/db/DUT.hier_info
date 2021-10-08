@@ -1,0 +1,113 @@
+|DUT
+input_vector[0] => Decoder:decoder_instance.E
+input_vector[1] => Decoder:decoder_instance.A0
+input_vector[2] => Decoder:decoder_instance.A1
+output_vector[0] << Decoder:decoder_instance.Y[0]
+output_vector[1] << Decoder:decoder_instance.Y[1]
+output_vector[2] << Decoder:decoder_instance.Y[2]
+output_vector[3] << Decoder:decoder_instance.Y[3]
+
+
+|DUT|Decoder:decoder_instance
+A1 => AND_3:and3.B
+A1 => INVERTER:not1.A
+A1 => AND_3:and2.A
+A0 => AND_3:and3.A
+A0 => INVERTER:not0.A
+A0 => AND_3:and1.A
+E => AND_3:and3.C
+E => AND_3:and0.C
+E => AND_3:and1.C
+E => AND_3:and2.C
+Y[3] <= AND_3:and3.Y
+Y[2] <= AND_3:and2.Y
+Y[1] <= AND_3:and1.Y
+Y[0] <= AND_3:and0.Y
+
+
+|DUT|Decoder:decoder_instance|AND_3:and3
+A => AND_2:a1.A
+B => AND_2:a1.B
+C => AND_2:a2.B
+Y <= AND_2:a2.Y
+
+
+|DUT|Decoder:decoder_instance|AND_3:and3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and3|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|INVERTER:not0
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|INVERTER:not1
+A => Y.DATAIN
+Y <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and0
+A => AND_2:a1.A
+B => AND_2:a1.B
+C => AND_2:a2.B
+Y <= AND_2:a2.Y
+
+
+|DUT|Decoder:decoder_instance|AND_3:and0|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and0|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and1
+A => AND_2:a1.A
+B => AND_2:a1.B
+C => AND_2:a2.B
+Y <= AND_2:a2.Y
+
+
+|DUT|Decoder:decoder_instance|AND_3:and1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and1|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and2
+A => AND_2:a1.A
+B => AND_2:a1.B
+C => AND_2:a2.B
+Y <= AND_2:a2.Y
+
+
+|DUT|Decoder:decoder_instance|AND_3:and2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Decoder:decoder_instance|AND_3:and2|AND_2:a2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

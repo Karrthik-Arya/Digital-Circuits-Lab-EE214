@@ -1,0 +1,240 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/winston/Documents/Acads/EE214/seq_gen_struct/simulation/modelsim
+Edff_reset
+Z1 w1632910936
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8/home/winston/Documents/Acads/EE214/seq_gen_struct/Flipflops.vhd
+Z5 F/home/winston/Documents/Acads/EE214/seq_gen_struct/Flipflops.vhd
+l0
+L33 1
+VWY8XNHZj74E]J4d:=PNMQ2
+!s100 K9<c7:O142A^]j[<cjVn]3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1633256933
+!i10b 1
+Z8 !s108 1633256933.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/winston/Documents/Acads/EE214/seq_gen_struct/Flipflops.vhd|
+Z10 !s107 /home/winston/Documents/Acads/EE214/seq_gen_struct/Flipflops.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 9 dff_reset 0 22 WY8XNHZj74E]J4d:=PNMQ2
+!i122 1
+l37
+L36 11
+VjC9B_JX:fzTVnSHiT6[V31
+!s100 1UeMLK9:FP;fVGPJ;XToH2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_set
+R1
+R2
+R3
+!i122 1
+R0
+R4
+R5
+l0
+L14 1
+V5@4n2XV8]2Vz0emn;8XE:0
+!s100 DfYF15MSX3LfBX9>LiDgW1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 7 dff_set 0 22 5@4n2XV8]2Vz0emn;8XE:0
+!i122 1
+l18
+L17 11
+VfoRdG^3K?][gh^TbfkNU83
+!s100 inO1anQ3@YX_ieQcI@n0G3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1632910606
+R2
+R3
+!i122 0
+R0
+Z14 8/home/winston/Documents/Acads/EE214/seq_gen_struct/DUT.vhd
+Z15 F/home/winston/Documents/Acads/EE214/seq_gen_struct/DUT.vhd
+l0
+L7 1
+ViYST@ah<HLdN^@OdP:4oM1
+!s100 z0O99WdUb8cQiz`1AABml0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/winston/Documents/Acads/EE214/seq_gen_struct/DUT.vhd|
+Z17 !s107 /home/winston/Documents/Acads/EE214/seq_gen_struct/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 iYST@ah<HLdN^@OdP:4oM1
+!i122 0
+l17
+L12 16
+V3D_<kIJOPeO5<>bSHeNX32
+!s100 3;GdV]f]h`bI9^YiRbQ[>2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pflipflops
+R2
+R3
+!i122 1
+R1
+R0
+R4
+R5
+l0
+L3 1
+VW4mZ8z336]85z^bSK2;Gg2
+!s100 k1I:SCjcaL4GO^Gd=g1Cn1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_generator_stru_dataflow
+Z18 w1632911210
+Z19 DPx4 work 9 flipflops 0 22 W4mZ8z336]85z^bSK2;Gg2
+R2
+R3
+!i122 2
+R0
+Z20 8/home/winston/Documents/Acads/EE214/seq_gen_struct/seq_gen.vhd
+Z21 F/home/winston/Documents/Acads/EE214/seq_gen_struct/seq_gen.vhd
+l0
+L6 1
+VmRNSP]a>oC[aM0^l@c8gW0
+!s100 =ljTFQLoTj=XW<d]KL_KF3
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/winston/Documents/Acads/EE214/seq_gen_struct/seq_gen.vhd|
+Z23 !s107 /home/winston/Documents/Acads/EE214/seq_gen_struct/seq_gen.vhd|
+!i113 1
+R11
+R12
+Astruct
+R19
+R2
+R3
+DEx4 work 32 sequence_generator_stru_dataflow 0 22 mRNSP]a>oC[aM0^l@c8gW0
+!i122 2
+l14
+L11 23
+V:<jTJ@IAfmb7zYK@65^:V0
+!s100 Fe]@B<f]m=j_VG[O7HZ[o0
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Etestbench
+Z24 w1632910628
+R3
+R2
+!i122 3
+R0
+Z25 8/home/winston/Documents/Acads/EE214/seq_gen_struct/Testbench.vhdl
+Z26 F/home/winston/Documents/Acads/EE214/seq_gen_struct/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/winston/Documents/Acads/EE214/seq_gen_struct/Testbench.vhdl|
+!s107 /home/winston/Documents/Acads/EE214/seq_gen_struct/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 3
+l69
+L9 132
+VlPDi41QfZijkSTJY3IWSz1
+!s100 @@ESlm]4mC=RdU2MJ`B`_3
+R6
+31
+R7
+!i10b 1
+R8
+R27
+Z28 !s107 /home/winston/Documents/Acads/EE214/seq_gen_struct/Testbench.vhdl|
+!i113 1
+R11
+R12

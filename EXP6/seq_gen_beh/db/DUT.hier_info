@@ -1,0 +1,20 @@
+|DUT
+input_vector[0] => sequence_generator_behavior:sequence_generator_behavior_instance.clock
+input_vector[1] => sequence_generator_behavior:sequence_generator_behavior_instance.reset
+output_vector[0] <= sequence_generator_behavior:sequence_generator_behavior_instance.y[0]
+output_vector[1] <= sequence_generator_behavior:sequence_generator_behavior_instance.y[1]
+output_vector[2] <= sequence_generator_behavior:sequence_generator_behavior_instance.y[2]
+
+
+|DUT|sequence_generator_behavior:sequence_generator_behavior_instance
+reset => state[0].ACLR
+reset => state[1].PRESET
+reset => state[2].PRESET
+clock => state[0].CLK
+clock => state[1].CLK
+clock => state[2].CLK
+y[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
